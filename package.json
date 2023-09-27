@@ -1,0 +1,39 @@
+{
+  "name": "discord-env-types",
+  "version": "1.0.0",
+  "description": "Type definitions for Discord environment.",
+  "types": "index.d.ts",
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "lint": "prettier --write . && eslint . --fix",
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mopsgamer/discord-env.git"
+  },
+  "keywords": [
+    "discord",
+    "typescript",
+    "ts"
+  ],
+  "author": "Mops",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Mopsgamer/discord-env/issues"
+  },
+  "homepage": "https://github.com/Mopsgamer/discord-env#readme",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^6.7.3",
+    "@typescript-eslint/parser": "^6.7.3",
+    "eslint": "^8.50.0",
+    "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "@types/electron": "^1.6.10",
+    "@types/lodash": "^4.14.199",
+    "@types/node": "^20.7.0"
+  }
+}
