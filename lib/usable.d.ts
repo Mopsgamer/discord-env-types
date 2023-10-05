@@ -70,6 +70,38 @@ export type DiscordLocaleName =
   | "Turkish"
   | "Ukrainian"
   | "Vietnamese";
+export interface DiscordLocaleData {
+  code: DiscordLocaleKey;
+  formatDistance: UnknownMethod;
+  formatRelative: UnknownMethod;
+  formatLong: {
+    date(param1?: { width: "full" | "long" | "medium" | "short" }): string;
+    dateTime(param1?: { width: "full" | "long" | "medium" | "short" }): string;
+    time(param1?: { width: "full" | "long" | "medium" | "short" }): string;
+  };
+  localize: {
+    day(day: number, options?: object): string;
+    dayPeriod(period: unknown, options?: object): string;
+    era(era: number, options?: object): string;
+    month(month: number, options?: object): string;
+    ordinalNumber(n: number, options?: object): string;
+  };
+  match: {
+    day(str: string): DiscordLocaleDataMatch<number>;
+    dayPeriod(str: string): DiscordLocaleDataMatch<unknown>;
+    era(str: string): DiscordLocaleDataMatch<number>;
+    month(str: string): DiscordLocaleDataMatch<number>;
+    ordinalNumber(str: string): DiscordLocaleDataMatch<number>;
+  };
+  options: {
+    weekStartsOn: number;
+    firstWeekContainsDate: number;
+  };
+}
+export interface DiscordLocaleDataMatch<ValueType> {
+  value: ValueType;
+  rest: string;
+}
 
 export interface OSInfo {
   appArch: NodeJS.Architecture;

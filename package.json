@@ -8,6 +8,7 @@
   },
   "scripts": {
     "lint": "prettier --write . && eslint . --fix",
+    "test": "tsc",
     "build": "tsc"
   },
   "repository": {
@@ -34,6 +35,7 @@
   "dependencies": {
     "@types/electron": "^1.6.10",
     "@types/lodash": "^4.14.199",
-    "@types/node": "^20.7.0"
+    "@types/node": "^20.7.0",
+    "@types/spellchecker": "^3.5.0"
   }
 }
