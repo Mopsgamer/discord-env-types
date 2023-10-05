@@ -11,8 +11,10 @@ import type {
   __SENTRY__,
   webpackChunkdiscord_app,
 } from "./lib";
+import type lodash from "lodash";
 
 declare global {
+  const _: lodash.__;
   const __DISCORD_WINDOW_ID: __DISCORD_WINDOW_ID;
   const __localeData__: __localeData__;
   const __BILLING_STANDALONE__: __BILLING_STANDALONE__;
@@ -24,6 +26,7 @@ declare global {
   const DiscordSentry: TDiscordSentry;
   const DiscordVideo: TDiscordVideo;
   interface Window {
+    _: typeof _;
     __DISCORD_WINDOW_ID: typeof __DISCORD_WINDOW_ID;
     __localeData__: typeof __localeData__;
     __BILLING_STANDALONE__: typeof __BILLING_STANDALONE__;
