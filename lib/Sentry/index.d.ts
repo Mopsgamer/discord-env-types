@@ -1,4 +1,4 @@
-import { UnknownMethod, ReleaseChannel } from ".";
+import { UnknownMethod, ReleaseChannel } from "..";
 
 export interface DiscordSentry {
   getCurrentHub(): SentryHub;
