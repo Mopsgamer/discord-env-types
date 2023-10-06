@@ -1,4 +1,4 @@
-import { CrashInfo, UnknownMethod, UnknownMethodAsync } from "../usable";
+import { CrashInfo, UnknownMethod, UnknownMethodAsync } from "../custom";
 
 export interface DiscordProcessUtils {
   flushCookies(cb: UnknownMethod): Promise<void>;

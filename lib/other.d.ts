@@ -1,5 +1,5 @@
 import { SentryHub } from "./Sentry";
-import { DiscordLocaleData, DiscordLocaleKey, UnknownMethod } from "./usable";
+import { DiscordLocaleData, DiscordLocaleKey, UnknownMethod } from "./custom";
 
 export type __DISCORD_WINDOW_ID = string;
 export type __isReactDndBackendSetUp = boolean;

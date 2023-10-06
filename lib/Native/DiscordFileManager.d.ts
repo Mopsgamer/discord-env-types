@@ -1,5 +1,5 @@
 import type Electron from "electron";
-import { UnknownMethodAsync, UnknownMethod, FileReadInfo } from "../usable";
+import { UnknownMethodAsync, UnknownMethod, FileReadInfo } from "../custom";
 import type path from "path";
 
 export interface DiscordFileManager {

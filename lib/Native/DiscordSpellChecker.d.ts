@@ -1,4 +1,4 @@
-import { AvailableDictionary, UnknownMethod } from "../usable";
+import { AvailableDictionary, UnknownMethod } from "../custom";
 
 export interface DiscordSpellChecker {
   getAvailableDictionaries(): Promise<AvailableDictionary[]>;

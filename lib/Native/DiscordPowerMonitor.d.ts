@@ -1,4 +1,4 @@
-import { UnknownMethod } from "../usable";
+import { UnknownMethod } from "../custom";
 
 export interface DiscordPowerMonitor {
   getSystemIdleTimeMs(): Promise<number>;

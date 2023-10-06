@@ -18,7 +18,7 @@ export * from "./DiscordSpellChecker";
 export * from "./DiscordThumbar";
 export * from "./DiscordWindow";
 
-import { OSInfo, UnknownMethod, UnknownMethodAsync } from "../usable";
+import { OSInfo, UnknownMethod, UnknownMethodAsync } from "../custom";
 import { DiscordAccessibility as TDiscordAccessibility } from "./DiscordAccessibility";
 import { DiscordClipboard as TDiscordClipboard } from "./DiscordClipboard";
 import { DiscordClips as TDiscordClips } from "./DiscordClips";

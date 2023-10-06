@@ -1,4 +1,4 @@
-import { UnknownMethodAsync } from "../usable";
+import { UnknownMethodAsync } from "../custom";
 
 export interface DiscordGlobalOverlay {
   openOverlay: UnknownMethodAsync;

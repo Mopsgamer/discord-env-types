@@ -1,4 +1,4 @@
-import { ReleaseChannel } from "../usable";
+import { ReleaseChannel } from "../custom";
 
 export interface DiscordCrashReporter {
   getFlattenMetadata(): {

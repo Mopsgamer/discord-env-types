@@ -1,4 +1,4 @@
-import { UnknownMethod } from "../usable";
+import { UnknownMethod } from "../custom";
 
 export interface DiscordWindow {
   USE_OSX_NATIVE_TRAFFIC_LIGHTS: boolean;

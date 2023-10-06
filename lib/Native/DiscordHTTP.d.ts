@@ -1,4 +1,4 @@
-import { UnknownMethod, UnknownMethodAsync } from "../usable";
+import { UnknownMethod, UnknownMethodAsync } from "../custom";
 
 export interface DiscordHTTP {
   getAPIEndpoint: UnknownMethodAsync<string>;
