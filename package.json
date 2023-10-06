@@ -9,8 +9,7 @@
   "scripts": {
     "lint": "prettier --write . && eslint --fix .",
     "test": "tsc",
-    "prepare": "npm run test && npm run lint",
-    "publish": "npm run prepare && npm publish"
+    "prepare": "npm run test && npm run lint"
   },
   "repository": {
     "type": "git",
