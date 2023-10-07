@@ -1,6 +1,6 @@
 {
   "name": "discord-env-types",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Type definitions for Discord environment.",
   "types": "index.d.ts",
   "publishConfig": {
