@@ -14,7 +14,7 @@ This package adds Discord environment types.
 ## Installation
 
 ```npm
-npm install discord-env-types
+npm install --save-dev discord-env-types
 ```
 
 ## Usage
@@ -22,13 +22,13 @@ npm install discord-env-types
 If you want to declare global Discord environment variables:
 
 ```ts
-import "discord-env-types";
+import type DET from "discord-env-types";
 
 DiscordNative.clipboard.copy("test");
 ```
 
 ```ts
-import DET from "discord-env-types";
+import type DET from "discord-env-types";
 
 const PickedNative: Pick<DET.DiscordNative, "clipboard" | "settings"> = ...;
 PickedNative.clipboard.copy("test");
@@ -39,7 +39,7 @@ DiscordNative.clipboard.copy("test");
 If you want to use types only, without global declarations:
 
 ```ts
-import DET from "discord-env-types/lib";
+import type DET from "discord-env-types/lib";
 
 const PickedNative: Pick<DET.DiscordNative, "clipboard" | "settings"> = ...;
 PickedNative.clipboard.copy("test");
