@@ -62,7 +62,6 @@ discord-env-types declares the types of the following variables:
 - `__timingFunction`
 - `_`
 - `_ws`
-- `$`
 - `DiscordErrors`
 - `DiscordNative`
 - `DiscordSentry`

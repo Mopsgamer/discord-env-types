@@ -30,7 +30,6 @@ declare global {
   const __timingFunction: () => number;
   const _: lodash.__;
   const _ws: _ws;
-  const $: typeof document.querySelector;
   const DiscordErrors: DiscordErrors;
   const DiscordNative: DiscordNative | undefined;
   const DiscordSentry: DiscordSentry;
@@ -49,7 +48,6 @@ declare global {
     __timingFunction: typeof __timingFunction;
     _: typeof _;
     _ws: typeof _ws;
-    $: typeof $;
     DiscordErrors: typeof DiscordErrors;
     DiscordNative: typeof DiscordNative;
     DiscordSentry: typeof DiscordSentry;
