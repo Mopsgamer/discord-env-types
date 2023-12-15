@@ -8,12 +8,13 @@
   },
   "scripts": {
     "lint": "prettier --write . && eslint --fix .",
-    "test": "tsc",
-    "prepare": "npm run test && npm run lint"
+    "test": "npx tsc",
+    "prepublishOnly": "npm run test && npm run lint",
+    "release": "npx release-it"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Mopsgamer/discord-env.git"
+    "url": "git+https://github.com/Mopsgamer/discord-env-types.git"
   },
   "keywords": [
     "discord",
@@ -23,21 +24,22 @@
   "author": "Mops",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Mopsgamer/discord-env/issues"
+    "url": "https://github.com/Mopsgamer/discord-env-types/issues"
   },
-  "homepage": "https://github.com/Mopsgamer/discord-env#readme",
+  "homepage": "https://github.com/Mopsgamer/discord-env-types#readme",
   "devDependencies": {
+    "@types/classnames": "^2.3.1",
+    "@types/electron": "^1.6.10",
+    "@types/lodash": "^4.14.202",
+    "@types/node": "^20.10.4",
+    "@types/react": "^18.2.45",
     "@typescript-eslint/eslint-plugin": "^6.7.3",
     "@typescript-eslint/parser": "^6.7.3",
     "eslint": "^8.50.0",
+    "release-it": "^17.0.1",
     "typescript": "^5.2.2"
   },
   "dependencies": {
-    "@emotion/react": "^11.11.1",
-    "@types/classnames": "^2.3.1",
-    "@types/electron": "^1.6.10",
-    "@types/lodash": "^4.14.199",
-    "@types/node": "^20.7.0",
-    "@types/react": "^18.2.25"
+    "@emotion/react": "^11.11.1"
   }
 }
