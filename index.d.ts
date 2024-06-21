@@ -16,7 +16,6 @@ import {
   GLOBAL_ENV,
   webpackChunkdiscord_app,
 } from "./lib";
-import * as lodash from "lodash";
 
 declare global {
   const __BILLING_STANDALONE__: __BILLING_STANDALONE__;
@@ -28,7 +27,6 @@ declare global {
   const __sentry_instrumentation_handlers__: __sentry_instrumentation_handlers__;
   const __SENTRY_IPC__: __SENTRY_IPC__;
   const __timingFunction: () => number;
-  const _: lodash.__;
   const _ws: _ws;
   const DiscordErrors: DiscordErrors;
   const DiscordNative: DiscordNative | undefined;
@@ -46,7 +44,6 @@ declare global {
     __sentry_instrumentation_handlers__: typeof __sentry_instrumentation_handlers__;
     __SENTRY_IPC__: typeof __SENTRY_IPC__;
     __timingFunction: typeof __timingFunction;
-    _: typeof _;
     _ws: typeof _ws;
     DiscordErrors: typeof DiscordErrors;
     DiscordNative: typeof DiscordNative;
