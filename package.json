@@ -7,10 +7,16 @@
     "access": "public"
   },
   "scripts": {
-    "lint": "prettier --write . && eslint --fix .",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix .",
     "test": "npx tsc",
     "prepublishOnly": "npm run test && npm run lint",
     "release": "npx release-it"
+  },
+  "release-it": {
+    "hooks": {
+      "before:init": "npm test && npm run lint"
+    }
   },
   "repository": {
     "type": "git",
